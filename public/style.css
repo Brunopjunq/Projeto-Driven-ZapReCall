@@ -15,10 +15,6 @@ body {
 
 }
 
-.hidden {
-    display: none;
-}
-
 .home-page {
     background-color: #FB6B6B;
     width: 100%;
@@ -33,6 +29,7 @@ body {
     width: 136px;
     height: 161px;
     margin-bottom: 27px;
+    margin-top: 150px;
 }
 
 .home-page h1 {
@@ -160,6 +157,9 @@ body {
     background-color: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .flash-card-options h1 {
@@ -170,12 +170,40 @@ body {
     line-height: 22px;
     color: #333333;
     padding: 10px;
+    
 }
 
 .button-options {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 6px;
+}
+
+.button-options button {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.button-options button:first-child {
+    background-color: #FF3030;
+}
+
+.button-options button:nth-child(2) {
+    background-color: #FF922E;
+}
+
+.button-options button:last-child {
+    background-color: #2FBE34;
 }
 
 .flash-card-options button {
@@ -192,6 +220,69 @@ body {
 .flash-cards .flash-card-options:last-child {
     margin-bottom: 95px;
 }
+
+.flash-card-result {
+    width: 300px;
+    height: 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flash-card-result h1 {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    margin-left: 15px;
+}
+
+.flash-card-result ion-icon {
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.flash-card-result.zap h1 {
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+.flash-card-result.quase-zap h1 {
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.flash-card-result.não-lembrei h1 {
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+.flash-card-result #zap {
+    color: #2FBE34;
+}
+
+
+.flash-card-result #quase-zap {
+    color: #FF922E;
+}
+
+.flash-card-result #não-lembrei {
+    color: #FF3030;
+}
+
+.flash-cards .flash-card-result:nth-child(-n+7) {
+    margin-bottom: 25px;
+}
+
+.flash-cards .flash-card-result:last-child {
+    margin-bottom: 200px;
+}
+
 
 footer {
     min-height: 70px;

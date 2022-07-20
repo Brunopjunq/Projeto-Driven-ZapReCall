@@ -23,17 +23,17 @@ export default function App() {
                 <button>Zap!</button>
             </div>
         </div>
-        <div className="flash-card">
+        <div className="flash-card-result zap">
             <h1>Pergunta 3</h1>
-            <ion-icon name="play-outline"></ion-icon>
+            <ion-icon id="zap" name="checkmark-circle"></ion-icon>
         </div>
-        <div className="flash-card">
+        <div className="flash-card-result quase-zap">
             <h1>Pergunta 4</h1>
-            <ion-icon name="play-outline"></ion-icon>
+            <ion-icon id="quase-zap" name="help-circle"></ion-icon>
         </div>
-        <div className="flash-card">
+        <div className="flash-card-result não-lembrei">
             <h1>Pergunta 5</h1>
-            <ion-icon name="play-outline"></ion-icon>
+            <ion-icon id="não-lembrei" name="close-circle"></ion-icon>
         </div>
         <div className="flash-card">
             <h1>Pergunta 6</h1>
@@ -49,7 +49,7 @@ export default function App() {
         </div>
         </div>
 
-        {/* <footer>
+        <footer>
             <p>1/4 CONCLUÍDOS</p>
             <div className="icon-answers">
             <ion-icon id="zap" name="checkmark-circle"></ion-icon>
@@ -57,9 +57,9 @@ export default function App() {
             <ion-icon id="não-lembrei" name="close-circle"></ion-icon>
             <ion-icon id="zap" name="checkmark-circle"></ion-icon>
             </div>
-        </footer> */}
+        </footer>
 
-        <footer className="result-msg">
+        {/* <footer className="result-msg">
             <p>
                 <img src="assets/img/party.png" />
                 <span>Parabéns!</span>
@@ -72,7 +72,7 @@ export default function App() {
             <ion-icon id="não-lembrei" name="close-circle"></ion-icon>
             <ion-icon id="zap" name="checkmark-circle"></ion-icon>
             </div>
-        </footer>
+        </footer> */}
 
 
     </div>
