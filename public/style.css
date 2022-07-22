@@ -52,9 +52,10 @@ body {
     line-height: 22px;
     text-align: center;
     color: #D70900;
+    cursor: pointer;
 }
 
-.header {
+header {
     height: 60px;
     margin-top: 42px;
     margin-bottom: 50px;
@@ -62,13 +63,13 @@ body {
     justify-content: center;
 }
 
-.header img {
+header img {
     width: 52px;
     height: 60px;
     margin-right: 22px;
 }
 
-.header h1 {
+header h1 {
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
@@ -89,6 +90,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .flash-card h1 {
@@ -140,6 +142,7 @@ body {
     right: 0;
     padding: 10px;
     width: 45px;
+    cursor: pointer;
 
 }
 
@@ -192,6 +195,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
 }
 
 .button-options button:first-child {
@@ -211,6 +215,7 @@ body {
     height: 37.17px;
     background: #FF3030;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .flash-cards .flash-card-options:nth-child(-n+7) {
